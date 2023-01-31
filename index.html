@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Vite + TS</title>
+  </head>
+  <body class="bg-[#2F4F30] text-white">
+    <div id="app">
+      <header class="text-center bg-black text-white p-[20px] text-[25px]">
+        BlackJack
+      </header>
+      <section class="text-center my-4" id="buttons">
+        <!-- Create 3 buttons -->
+        <button
+          class="bg-red-500 rounded text-white px-[20px] py-[10px] text-lg"
+          id="nuevoButton"
+        >
+          Nuevo Juego
+        </button>
+        <button
+          class="bg-blue-500 rounded text-white px-[20px] py-[10px] text-lg"
+          id="pedirButton"
+        >
+          Pedir Carta
+        </button>
+        <button
+          class="bg-blue-500 rounded text-white px-[20px] py-[10px] text-lg"
+          id="detenerButton"
+        >
+          Detener
+        </button>
+      </section>
+
+      <section class="h-[280px] p-4">
+        <div>
+          <h1 class="text-3xl font-semibold">
+            Jugador 1 - <small id="playerPoints">0</small>
+          </h1>
+          <div id="jugador-cartas" class="flex"></div>
+        </div>
+      </section>
+
+      <section class="mt-4 p-4">
+        <div>
+          <h1 class="text-3xl font-semibold">
+            Computadora - <small id="computerPoints">0</small>
+          </h1>
+          <div id="computadora-cartas" class="flex"></div>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
